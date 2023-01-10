@@ -27,20 +27,43 @@ $ docker run -p 3000:3000 raymond93/millenium-falcon-challenge-front
 
 You should now be able to access the link [http://localhost:3000](http://localhost:3000) and use the app.
 
-## Project Setup
+## Install with npm
 
-```sh
-npm install
+Create a new folder for the front end project
+
+```
+$ mkdir <path/to/project>
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+```
+$ cd <path/to/project>
 ```
 
-### Compile and Minify for Production
+Initialize git and clone the project
 
-```sh
-npm run build
 ```
+$ git init
+```
+
+```
+$ git clone https://github.com/RaymondSoun/millenium-falcon-challenge-front.git
+```
+
+Install the dependencies with the following command:
+
+```
+$ npm install
+```
+
+Compile and minify
+
+```
+$ npm run build
+```
+
+Launch the app:
+```
+$ serve -s dist
+```
+
+You can now access the interface on [http://localhost:3000](http://localhost:3000)
