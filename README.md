@@ -8,7 +8,10 @@ The Empire has hired the best bounty hunters in the galaxy to capture the Millen
 
 
 # Installing the package
+
+Make sure the server is running before running the following commands : [https://github.com/RaymondSoun/millenium-falcon-challenge](https://github.com/RaymondSoun/millenium-falcon-challenge)
 ## Install with docker
+
 Run the following commands to install the frontend project with Docker:
 
 ```
