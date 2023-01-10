@@ -42,11 +42,7 @@ $ mkdir <path/to/project>
 $ cd <path/to/project>
 ```
 
-Initialize git and clone the project
-
-```
-$ git init
-```
+Clone the project
 
 ```
 $ git clone https://github.com/RaymondSoun/millenium-falcon-challenge-front.git
@@ -58,7 +54,7 @@ Install the dependencies with the following command:
 $ npm install
 ```
 
-Compile and minify
+Compile and minify:
 
 ```
 $ npm run build
