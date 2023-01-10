@@ -11,6 +11,8 @@ The Empire has hired the best bounty hunters in the galaxy to capture the Millen
 *In this tutorial, we will suppose that node 16 or above is installed on your machine, if not follow the links below:*
 *https://nodejs.org/en/download/*
 
+*We will also suppose that you installed the backend project and the server is running, if not please refer to [this tutorial](https://github.com/RaymondSoun/millenium-falcon-challenge)*
+
 # Installing the package
 ## Install with docker
 Run the following commands to install the frontend project with Docker:
@@ -23,7 +25,7 @@ $ docker pull raymond93/millenium-falcon-challenge-front
 $ docker run -p 3000:3000 raymond93/millenium-falcon-challenge-front
 ```
 
-You should now be able to acces the link [http://localhost:3000](http://localhost:3000)
+You should now be able to access the link [http://localhost:3000](http://localhost:3000) and use the app.
 
 ## Project Setup
 
