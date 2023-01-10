@@ -1,14 +1,29 @@
-# c3po
+# Millenium Falcon Challenge
 
-This template should help get you started developing with Vue 3 in Vite.
+The Death Star - the Empire's ultimate weapon - is almost operational and is currently approaching the Endor planet. The countdown has started.
 
-## Recommended IDE Setup
+Han Solo, Chewbacca, Leia and C3PO are currently on Tatooine boarding on the Millennium Falcon. They must reach Endor to join the Rebel fleet and destroy the Death Star before it annihilates the planet.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The Empire has hired the best bounty hunters in the galaxy to capture the Millennium Falcon and stop it from joining the rebel fleet...
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+# Prerequisites
+*In this tutorial, we will suppose that node 16 or above is installed on your machine, if not follow the links below:*
+*https://nodejs.org/en/download/*
+
+# Installing the package
+## Install with docker
+Run the following commands to install the frontend project with Docker:
+
+```
+$ docker pull raymond93/millenium-falcon-challenge-front
+```
+
+```
+$ docker run -p 3000:3000 raymond93/millenium-falcon-challenge-front
+```
+
+You should now be able to acces the link [http://localhost:3000](http://localhost:3000)
 
 ## Project Setup
 
