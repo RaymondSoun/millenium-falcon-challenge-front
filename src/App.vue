@@ -40,7 +40,8 @@ export default {
             success_class.value = "orange"
           }
           odds.value = "Odds of saving the galaxy: " + res.data.probability + "%"
-          best_path.value = "From " + res.data.origin_planet + " "
+          if (res.data.probability > 0)
+            best_path.value = "From " + res.data.origin_planet + " "
           res.data.best_path.forEach(element => {
             if (element.type == "Travel")
               best_path.value = best_path.value + element.type + " to " + element.destination + " "
