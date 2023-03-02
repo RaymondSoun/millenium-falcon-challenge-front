@@ -15,10 +15,13 @@ export default {
     let success_class = ref("")
 
     const drop = (e) => {
-      dropzone_file.value = e.dataTransfer.files[0]
+      if (e.type == "change")
+        dropzone_file.value = e.target.files[0]
+      else
+        dropzone_file.value = e.dataTransfer.files[0]
       let formData = new FormData();
       formData.append('file', dropzone_file.value)
-      console.log(formData)
+      //console.log(formData)
       const path = 'http://localhost:5000/calculate';
       axios.post(path, formData, {
         headers: {
@@ -26,7 +29,7 @@ export default {
         }
       })
         .then((res) => {
-          console.log(res)
+          //console.log(res)
           if (res.data.probability == 100) {
             success_class.value = "green"
           }
@@ -44,7 +47,7 @@ export default {
             else
               best_path.value = best_path.value + element.type + " 1 day "
           });
-          console.log(best_path)
+          //console.log(best_path)
         })
         .catch((error) => {
           success_class.value = ""
@@ -54,6 +57,7 @@ export default {
 
     const selectedFile = () => {
       dropzone_file.value = document.querySelector(".dropzone_file").files[0]
+      console.log(dropzone_file)
     }
 
     return { dropzone_file, odds, best_path, success_class, drop, selectedFile }
@@ -66,7 +70,7 @@ export default {
   <div class="wrapper home">
     <div id="background"></div>
     <h1 id="main_title">What are the odds ?</h1>
-    <DropZone @drop.prevent="drop" @change="selectedFile" />
+    <DropZone @drop.prevent="drop" @change="drop" />
     <h1 :class="[success_class]" v-if="odds !== false">{{ odds }}</h1>
     <h2 v-if="best_path !== false">{{ best_path }}</h2>
   </div>
