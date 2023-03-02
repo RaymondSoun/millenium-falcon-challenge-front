@@ -1,5 +1,7 @@
 # Millenium Falcon Challenge
 
+This project is a solution to this [challenge](https://github.com/dataiku/millenium-falcon-challenge)
+
 The Death Star - the Empire's ultimate weapon - is almost operational and is currently approaching the Endor planet. The countdown has started.
 
 Han Solo, Chewbacca, Leia and C3PO are currently on Tatooine boarding on the Millennium Falcon. They must reach Endor to join the Rebel fleet and destroy the Death Star before it annihilates the planet.
